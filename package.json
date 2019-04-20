@@ -1,0 +1,74 @@
+{
+  "name": "snake-react-live",
+  "version": "1.0.0",
+  "description": "react-live",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --config jest.config.js --verbose",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch",
+    "build": "tsc",
+    "docz:dev": "docz dev"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/*.tsx": [
+      "prettier --write",
+      "tslint --config tslint.json --fix",
+      "git add"
+    ],
+    "src/**/*.scss": [
+      "stylelint --syntax scss --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snakeUni/snake-react-live.git"
+  },
+  "keywords": [
+    "react",
+    "online",
+    "code",
+    "live",
+    "code"
+  ],
+  "author": "lanyincao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snakeUni/snake-react-live/issues"
+  },
+  "homepage": "https://github.com/snakeUni/snake-react-live#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/react": "^16.8.14",
+    "@types/react-dom": "^16.8.4",
+    "@types/warning": "^3.0.0",
+    "commitlint": "^7.5.2",
+    "docz": "^1.0.4",
+    "docz-theme-default": "^1.0.4",
+    "husky": "^1.3.1",
+    "jest": "^24.7.1",
+    "lint-staged": "^8.1.5",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.17.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-testing-library": "^6.1.2",
+    "stylelint": "^10.0.1",
+    "travis": "^0.1.1",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-react-hooks": "^2.1.0",
+    "typescript": "^3.4.4"
+  },
+  "dependencies": {
+    "warning": "^4.0.3"
+  }
+}
