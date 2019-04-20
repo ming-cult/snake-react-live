@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react",
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "target": "es5",
+    "lib": ["es6", "ES2016", "dom"],
+    "moduleResolution": "node",
+    "declaration": true,
+    "module": "es6",
+    "esModuleInterop": true
+  },
+  "exclude": ["src/**/__tests__"],
+  "include": ["src"]
+}
